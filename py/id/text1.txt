@@ -1,0 +1,4 @@
+There are 32 people in the class in total.
+Vasya was the 3rd.
+He loved books.
+There were more than 20 books in his collection.
