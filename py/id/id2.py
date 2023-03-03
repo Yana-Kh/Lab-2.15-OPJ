@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     file_name = input("Введите имя редактируемого файла: ")
     words_name = input("Введите имя файла со словами: ")
     words = []
@@ -24,4 +24,3 @@ if __name__ == '__main__':
                 new_f.write(sentence)
 
     print("Операция прошла успешно")
-
