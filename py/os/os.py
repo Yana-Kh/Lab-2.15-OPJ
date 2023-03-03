@@ -24,4 +24,3 @@ if __name__ == '__main__':
     #Переименование файла
     new_name = input("Введите новое имя для файла: ")
     os.rename("file.txt", new_name)
-    
