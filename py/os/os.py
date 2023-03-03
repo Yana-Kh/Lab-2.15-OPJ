@@ -3,6 +3,11 @@
 
 import os
 
+"""
+Создает новую дериктоию и прописывает путь к ней
+в текстовом файле с последующем переименованием 
+этого файла
+"""
 
 if __name__ == '__main__':
     # Создание директории и запоминание пути
@@ -11,7 +16,7 @@ if __name__ == '__main__':
     path = os.getcwd()
 
     #Перемещение в новую директорию
-    os.chdir(path + '\\' + dir_name)
+    os.chdir(r"{0}\{1}".format(path, dir_name))
     with open("file.txt", "w", encoding="utf-8") as f:
         # appending the content to the file
         f.write(os.getcwd())
@@ -19,3 +24,4 @@ if __name__ == '__main__':
     #Переименование файла
     new_name = input("Введите новое имя для файла: ")
     os.rename("file.txt", new_name)
+    
