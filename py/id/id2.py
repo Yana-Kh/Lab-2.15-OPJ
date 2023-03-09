@@ -14,7 +14,7 @@ if __name__ == "__main__":
     with open("new2.txt", "w", encoding="utf-8") as new_f:
 
         # Чтение заданного файла
-        with open(file_name, "r+", encoding="utf-8") as f:
+        with open(file_name, "r", encoding="utf-8") as f:
             sentences = f.readlines()
             for sentence in sentences:
                 for i in words:
